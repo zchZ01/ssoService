@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace用于绑定Dao接口 -->
+<mapper namespace="com.share.sso.dao.IUserdao">
+    <!--查询用户信息-->
+<select id="findById" parameterType="com.share.sso.interfaces.model.UserModel"  resultType="com.share.sso.interfaces.model.UserModel">
+    select * from userInfo where id = #{id}
+</select>
+</mapper>
